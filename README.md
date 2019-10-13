@@ -1,5 +1,10 @@
-# cosmoshub-3-testnet
-decentralized chain upgrade tester group
+# export-migrate procedure
+
+Created: Oct 11, 2019 8:46 PM
+Created By: Hyungyeon Lee
+Last Edited By: Hyungyeon Lee
+Last Edited Time: Oct 13, 2019 10:38 PM
+
 1. stop gaiad on your spare node(which is using sdk 0.34.7~9) synced to cosmoshub-2
 
 2. export state on height 2,140,000(takes several minutes)
@@ -9,7 +14,7 @@ decentralized chain upgrade tester group
 3. check sha256sum of exported file
 
     jq -S -c -M '' cosmoshub-2-export-at-2140000.json | shasum -a 256
-    (result : 633ba29af77848fa5bd6158d89c7c6557c4df32ab1efa9f19b06082a44df2320)
+    # result : 633ba29af77848fa5bd6158d89c7c6557c4df32ab1efa9f19b06082a44df2320
 
 4. install gaia/rc2/v2.0.2 in new server
 

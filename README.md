@@ -1,9 +1,12 @@
-# export-migrate procedure
+# export-migrate-replace script
 
-## launch mannual : https://www.notion.so/export-migrate-procedure-5d0cd651d83d4aee89011287943dedc9
+## configuration(in replace.py)
 
-## replacement plan : https://docs.google.com/spreadsheets/d/1fIiusivqyPg9JgAbQ2i6yxZuJ6JFCKnY94Lzab2Tcms/edit?usp=sharing
-
-## peer info
-
-b-harvest : 65d4fba1f075414fdca387682c5168c4b7763f11@211.192.161.41:36656,f22a4bb961f30a78dcbc8a43cacecb31bb4efb87@211.192.161.41:46656,36586a259b9c63085c191180a287ebd6848df775@211.192.161.41:56656
+### environment variables
+read_file = "replacement_plan.txt" # containing list of valconspub_old, valconspub_new
+original_state_file = "cosmoshub-2-export-at-2140000.json"
+new_state_file = "genesis.json"
+binary_path = "./" # path where gaiad, gaiacli, gaiadebug is located
+version_tobe = "v0.36"
+chain_id_tobe = "cosmoshub-3-testnet"
+genesis_time_tobe = "2019-10-14T00:00:00Z"

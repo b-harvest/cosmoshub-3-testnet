@@ -1,4 +1,4 @@
-# export-migrate-replace script
+# migrate-replace script
 
 ## preliminary
 

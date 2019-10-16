@@ -4,6 +4,7 @@
 
 - exported state file from old chain
 - binaries for new chain : gaiad, gaiacli, gaiadebug
+- replacement plan txt having valconspub_old, valconspub_new
 
 ## configuration
 

@@ -1,4 +1,4 @@
-# migrate-replace script
+# migrate-replace script for cosmoshub-3.3-testnet
 
 ## preliminary
 
